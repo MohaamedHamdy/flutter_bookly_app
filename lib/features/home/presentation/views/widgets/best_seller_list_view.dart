@@ -1,3 +1,4 @@
+import 'package:bookly/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'best_seller_item.dart';
 
@@ -17,7 +18,7 @@ class BestSellerListView extends StatelessWidget {
           itemCount: 10,
           itemBuilder: (context, index) => InkWell(
               onTap: () {
-                Navigator.pushNamed(context, '/bookDetails');
+                Navigator.pushNamed(context, AppRouter.kBookDetails);
               },
               child: const BestSellerItem()),
         ),

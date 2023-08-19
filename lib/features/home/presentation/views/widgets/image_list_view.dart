@@ -1,3 +1,4 @@
+import 'package:bookly/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'custom_image_container.dart';
 
@@ -16,7 +17,7 @@ class ImagesListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => InkWell(
           onTap: (){
-            Navigator.pushNamed(context, '/bookDetails');
+            Navigator.pushNamed(context, AppRouter.kBookDetails);
           },
           child: CustomImageContainer(
             child: Column(
@@ -31,7 +32,9 @@ class ImagesListView extends StatelessWidget {
                     color: Color.fromRGBO(255, 255, 255, 0.30),
                     shape: BoxShape.circle,
                   ),
-                  child: IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_right,size: 20,)),
+                  child: IconButton(onPressed: (){
+                    Navigator.pushNamed(context, AppRouter.kBookDetails);
+                  }, icon: const Icon(Icons.arrow_right,size: 20,)),
                 ),
               ],
             ),
