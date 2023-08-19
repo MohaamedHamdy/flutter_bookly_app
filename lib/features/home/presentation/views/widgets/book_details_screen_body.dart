@@ -12,32 +12,25 @@ class BookDetailsBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const CustomDetailsAppBar(),
-        Center(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 34.0, bottom: 40.0),
-            child: CustomImageContainer(
-              height: 260,
-              aspectRatio: 2.6 / 4,
-            ),
+        Padding(
+          padding: const EdgeInsets.only(top: 34.0, bottom: 40.0),
+          child: CustomImageContainer(
+            height: 260,
+            aspectRatio: 2.6 / 4,
           ),
         ),
-        Center(
-          child: Text(
-            'The Jungle Book',
-            style: Styles.textStyle22.copyWith(fontSize: 30),
-          ),
+        Text(
+          'The Jungle Book',
+          style: Styles.textStyle22.copyWith(fontSize: 30),
         ),
         const SizedBox(
           height: 6,
         ),
-        Center(
-          child: Text(
-            'Rudyard Lipling',
-            style: Styles.textStyle20.copyWith(color: Colors.grey),
-          ),
+        Text(
+          'Rudyard Lipling',
+          style: Styles.textStyle20.copyWith(color: Colors.grey),
         ),
         const SizedBox(
           height: 16,
@@ -50,12 +43,17 @@ class BookDetailsBody extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        const Padding(
-          padding: EdgeInsets.only(left: 30.0, bottom: 16),
-          child: Text(
-            'You can also like',
-            style: Styles.textStyle16,
-          ),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+             Padding(
+              padding: EdgeInsets.only(left: 30.0, bottom: 16),
+              child: Text(
+                'You can also like',
+                style: Styles.textStyle16,
+              ),
+            ),
+          ],
         ),
         const YouCanAlsoLikeListView(),
       ],
