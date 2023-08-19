@@ -1,8 +1,4 @@
-import 'package:bookly/constants.dart';
-import 'package:bookly/features/home/presentation/views/widgets/book_details_screen_body.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
 import 'best_seller_item.dart';
 
 class BestSellerListView extends StatelessWidget {
@@ -21,11 +17,7 @@ class BestSellerListView extends StatelessWidget {
           itemCount: 10,
           itemBuilder: (context, index) => InkWell(
               onTap: () {
-                Get.to(
-                  () => const BookDetailsBody(),
-                  transition: Transition.fade,
-                  duration: transitionDuration,
-                );
+                Navigator.pushNamed(context, '/bookDetails');
               },
               child: const BestSellerItem()),
         ),

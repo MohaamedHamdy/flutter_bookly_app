@@ -1,6 +1,4 @@
-import 'package:bookly/features/home/presentation/views/widgets/book_details_screen_body.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'custom_image_container.dart';
 
 class ImagesListView extends StatelessWidget {
@@ -18,9 +16,7 @@ class ImagesListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => InkWell(
           onTap: (){
-            Get.to(
-                () => BookDetailsBody(),
-            );
+            Navigator.pushNamed(context, '/bookDetails');
           },
           child: CustomImageContainer(
             child: Column(

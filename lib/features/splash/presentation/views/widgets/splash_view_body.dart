@@ -1,9 +1,6 @@
-import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/assets.dart';
-import 'package:bookly/features/home/presentation/views/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'animated_text.dart';
-import 'package:get/get.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({Key? key}) : super(key: key);
@@ -66,11 +63,12 @@ class _SplashViewBodyState extends State<SplashViewBody>
         const Duration(
           seconds: 3,
         ), () {
-      Get.to(
-            () => const HomeScreen(),
-        transition: Transition.fade,
-        duration: transitionDuration,
-      );
+      // Get.to(
+      //       () => const HomeScreen(),
+      //   transition: Transition.fade,
+      //   duration: transitionDuration,
+      Navigator.pushNamed(context, '/home');
+
     });
   }
 
