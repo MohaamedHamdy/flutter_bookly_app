@@ -82,13 +82,16 @@ class BooksNameColumn extends StatelessWidget {
 
 class RatingWidget extends StatelessWidget {
   const RatingWidget({
+    this.mainAxisAlignment = MainAxisAlignment.start,
     super.key,
   });
+
+  final MainAxisAlignment mainAxisAlignment;
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: mainAxisAlignment,
       children: [
         const Icon(
           FontAwesomeIcons.solidStar,
