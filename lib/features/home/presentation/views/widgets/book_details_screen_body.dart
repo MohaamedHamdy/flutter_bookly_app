@@ -43,9 +43,9 @@ class BookDetailsBody extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
+        const Align(
+          alignment: Alignment.centerLeft,
+          child:
              Padding(
               padding: EdgeInsets.only(left: 30.0, bottom: 16),
               child: Text(
@@ -53,7 +53,7 @@ class BookDetailsBody extends StatelessWidget {
                 style: Styles.textStyle16,
               ),
             ),
-          ],
+
         ),
         const YouCanAlsoLikeListView(),
       ],
