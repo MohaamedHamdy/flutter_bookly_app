@@ -14,8 +14,8 @@ class BookDetailsBody extends StatelessWidget {
     return Column(
       children: [
         const CustomDetailsAppBar(),
-        Padding(
-          padding: const EdgeInsets.only(top: 34.0, bottom: 40.0),
+        const Padding(
+          padding: EdgeInsets.only(top: 34.0, bottom: 40.0),
           child: CustomImageContainer(
             height: 260,
             aspectRatio: 2.6 / 4,

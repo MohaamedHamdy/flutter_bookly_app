@@ -1,4 +1,5 @@
 import 'package:bookly/core/utils/styles.dart';
+import 'package:bookly/core/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class FreePreviewButton extends StatelessWidget {
@@ -11,40 +12,37 @@ class FreePreviewButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          height: 48,
-          width: 150,
-          decoration: const BoxDecoration(
+        Center(
+          child: CustomButton(
+            func: () {},
             color: Colors.white,
-            borderRadius: BorderRadius.horizontal(
+            borderRadius: const BorderRadius.horizontal(
               left: Radius.circular(20.0),
             ),
-          ),
-          child: Center(
-              child: Text(
-                '19.99\$',
-                style: Styles.textStyle20.copyWith(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w900,
-                ),
-              )),
-        ),
-        Container(
-          height: 48,
-          width: 150,
-          decoration: const BoxDecoration(
-            color: Color.fromRGBO(239, 130, 98, 1),
-            borderRadius: BorderRadius.horizontal(
-              right: Radius.circular(20.0),
+            child: Text(
+              '19.99\$',
+              style: Styles.textStyle20.copyWith(
+                color: Colors.black,
+                fontWeight: FontWeight.w900,
+              ),
             ),
           ),
-          child: Center(
-              child: Text(
-                'Free preview',
-                style: Styles.textStyle16.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
-              )),
+        ),
+        Center(
+          child: CustomButton(
+            func: () {},
+            color: const Color.fromRGBO(239, 130, 98, 1.0),
+            borderRadius: const BorderRadius.horizontal(
+              right: Radius.circular(20.0),
+            ),
+            child: Text(
+              'Free preview',
+              style: Styles.textStyle16.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+          ),
         ),
       ],
     );
