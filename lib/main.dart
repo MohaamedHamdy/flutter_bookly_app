@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: mainColor,
           textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
+      initialRoute: '/',
       onGenerateRoute: AppRouter.generateRoute,
     );
   }
