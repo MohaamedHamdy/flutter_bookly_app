@@ -16,7 +16,7 @@ class ImagesListView extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => InkWell(
-          onTap: (){
+          onTap: () {
             Navigator.pushNamed(context, AppRouter.kBookDetails);
           },
           child: CustomImageContainer(
@@ -32,9 +32,14 @@ class ImagesListView extends StatelessWidget {
                     color: Color.fromRGBO(255, 255, 255, 0.30),
                     shape: BoxShape.circle,
                   ),
-                  child: IconButton(onPressed: (){
-                    Navigator.pushNamed(context, AppRouter.kBookDetails);
-                  }, icon: const Icon(Icons.arrow_right,size: 20,)),
+                  child: IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, AppRouter.kBookDetails);
+                      },
+                      icon: const Icon(
+                        Icons.arrow_right,
+                        size: 20,
+                      )),
                 ),
               ],
             ),

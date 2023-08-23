@@ -6,21 +6,31 @@ import 'package:bookly/core/widgets/page_not_found.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppRouter {
-
   static const kHomeScreen = '/home';
   static const kBookDetails = '/bookDetails';
   static const kSearch = '/search';
 
-  static Route generateRoute(RouteSettings settings){
-    switch(settings.name){
+  static Route generateRoute(RouteSettings settings) {
+    switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (context) => const SplashScreen(),);
+        return MaterialPageRoute(
+          builder: (context) => const SplashScreen(),
+        );
       case kHomeScreen:
-        return MaterialPageRoute(builder: (context) => const HomeScreen(),);
+        return MaterialPageRoute(
+          builder: (context) => const HomeScreen(),
+        );
       case kBookDetails:
-        return MaterialPageRoute(builder: (context) => const BookDetailsScreen(),);
+        return MaterialPageRoute(
+          builder: (context) => const BookDetailsScreen(),
+        );
       case kSearch:
-        return MaterialPageRoute(builder: (context) => const SearchScreen(),);
+        return MaterialPageRoute(
+          builder: (context) => const SearchScreen(),
+        );
     }
-    return MaterialPageRoute(builder: (context) => const PageNotFound(),);}
+    return MaterialPageRoute(
+      builder: (context) => const PageNotFound(),
+    );
+  }
 }

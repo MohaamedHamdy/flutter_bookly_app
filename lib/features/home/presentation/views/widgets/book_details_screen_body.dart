@@ -35,7 +35,9 @@ class BookDetailsBody extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        const RatingWidget(mainAxisAlignment: MainAxisAlignment.center,),
+        const RatingWidget(
+          mainAxisAlignment: MainAxisAlignment.center,
+        ),
         const SizedBox(
           height: 37,
         ),
@@ -45,22 +47,16 @@ class BookDetailsBody extends StatelessWidget {
         ),
         const Align(
           alignment: Alignment.centerLeft,
-          child:
-             Padding(
-              padding: EdgeInsets.only(left: 30.0, bottom: 16),
-              child: Text(
-                'You can also like',
-                style: Styles.textStyle16,
-              ),
+          child: Padding(
+            padding: EdgeInsets.only(left: 30.0, bottom: 16),
+            child: Text(
+              'You can also like',
+              style: Styles.textStyle16,
             ),
-
+          ),
         ),
         const YouCanAlsoLikeListView(),
       ],
     );
   }
 }
-
-
-
-

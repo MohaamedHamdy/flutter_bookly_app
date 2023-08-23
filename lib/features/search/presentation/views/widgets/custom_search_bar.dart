@@ -14,7 +14,10 @@ class CustomSearchBar extends StatelessWidget {
         ),
         labelText: 'Search',
         labelStyle: const TextStyle(color: Colors.grey),
-        suffixIcon: const Icon(FontAwesomeIcons.magnifyingGlass,color: Colors.grey,),
+        suffixIcon: const Icon(
+          FontAwesomeIcons.magnifyingGlass,
+          color: Colors.grey,
+        ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.0),
           borderSide: const BorderSide(color: Colors.grey),

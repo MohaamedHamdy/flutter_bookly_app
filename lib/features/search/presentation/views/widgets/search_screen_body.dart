@@ -14,7 +14,9 @@ class SearchScreenBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomSearchBar(),
-          SizedBox(height: 20.0,),
+          SizedBox(
+            height: 20.0,
+          ),
           Text(
             'Best Seller',
             style: Styles.textStyle20,
@@ -25,5 +27,3 @@ class SearchScreenBody extends StatelessWidget {
     );
   }
 }
-
-

@@ -20,7 +20,6 @@ class AnimatedText extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           );
-        }
-    );
+        });
   }
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class CustomImageContainer extends StatelessWidget {
-
   final double height;
   final double radius;
   final double aspectRatio;
@@ -10,7 +9,7 @@ class CustomImageContainer extends StatelessWidget {
   const CustomImageContainer({
     this.child,
     this.radius = 16.0,
-    this.aspectRatio = 3/4,
+    this.aspectRatio = 3 / 4,
     this.height = 224,
     super.key,
   });

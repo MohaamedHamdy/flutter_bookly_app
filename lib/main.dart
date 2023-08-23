@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-          scaffoldBackgroundColor: mainColor,
-          textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+        scaffoldBackgroundColor: mainColor,
+        textTheme: GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
       ),
       initialRoute: '/',
       onGenerateRoute: AppRouter.generateRoute,

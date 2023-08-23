@@ -1,4 +1,3 @@
-
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -54,8 +53,7 @@ class BooksNameColumn extends StatelessWidget {
           ),
           Text(
             'J.K.Rowling',
-            style:
-            Styles.textStyle16.copyWith(color: Colors.grey.shade400),
+            style: Styles.textStyle16.copyWith(color: Colors.grey.shade400),
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),
@@ -106,8 +104,7 @@ class RatingWidget extends StatelessWidget {
         ),
         Text(
           ' (2390)',
-          style:
-          Styles.textStyle16.copyWith(color: Colors.grey),
+          style: Styles.textStyle16.copyWith(color: Colors.grey),
         ),
       ],
     );
