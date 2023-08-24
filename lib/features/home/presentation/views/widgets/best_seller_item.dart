@@ -12,7 +12,7 @@ class BestSellerItem extends StatelessWidget {
     return Container(
       height: 130,
       margin: const EdgeInsets.only(bottom: 20),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -21,10 +21,10 @@ class BestSellerItem extends StatelessWidget {
             aspectRatio: 2.5 / 4,
             radius: 8,
           ),
-          const SizedBox(
+          SizedBox(
             width: 20,
           ),
-          const BooksNameColumn(),
+          BooksNameColumn(),
         ],
       ),
     );

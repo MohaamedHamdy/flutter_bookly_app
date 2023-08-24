@@ -16,8 +16,8 @@ class YouCanAlsoLikeListView extends StatelessWidget {
           itemCount: 7,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return Padding(
-              padding: const EdgeInsets.only(right: 10.0),
+            return const Padding(
+              padding: EdgeInsets.only(right: 10.0),
               child: CustomImageContainer(
                 aspectRatio: 0.66,
                 height: 112,

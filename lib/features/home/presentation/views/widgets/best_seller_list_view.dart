@@ -9,19 +9,17 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.only(top: 24.0, left: 24, right: 47),
-        child: ListView.builder(
-          physics: const NeverScrollableScrollPhysics(),
-          padding: EdgeInsets.zero,
-          itemCount: 10,
-          itemBuilder: (context, index) => InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, AppRouter.kBookDetails);
-              },
-              child: const BestSellerItem()),
-        ),
+    return Padding(
+      padding: const EdgeInsets.only(top: 24.0, left: 24, right: 47),
+      child: ListView.builder(
+        physics: const NeverScrollableScrollPhysics(),
+        padding: EdgeInsets.zero,
+        itemCount: 10,
+        itemBuilder: (context, index) => InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, AppRouter.kBookDetails);
+            },
+            child: const BestSellerItem()),
       ),
     );
   }
